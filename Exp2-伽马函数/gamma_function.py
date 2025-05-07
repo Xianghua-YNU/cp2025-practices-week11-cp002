@@ -1,6 +1,8 @@
 import numpy as np
 import matplotlib
-
+matplotlib.use('Agg')  # 设置后端为非交互式后端
+import matplotlib.pyplot as plt
+import os
 
 def integrand_gamma(x, a):
     """计算伽马函数的原始被积函数: f(x, a) = x^(a-1) * exp(-x)"""
